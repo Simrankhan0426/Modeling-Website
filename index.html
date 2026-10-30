@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMA Models | Model Management Agency</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announcement">
+    NOW CASTING — NEW FACES FOR 2027
+    <a href="#contact">Apply Now ↗</a>
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">FORMA<span>.</span></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#models">Our Models</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav-btn">Become a Model ↗</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">INDEPENDENT MODEL MANAGEMENT</p>
+      <h1>Beauty in every<br><em>individual.</em></h1>
+      <p class="hero-desc">
+        We discover extraordinary talent and connect inspiring faces
+        with the world's most creative brands.
+      </p>
+      <div class="hero-buttons">
+        <a href="#models" class="primary-btn">Explore Models ↗</a>
+        <a href="#about" class="text-btn">Discover Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=85" alt="Fashion model">
+      <div class="image-label">
+        <span>01 / 04</span>
+        <strong>THE NEW GENERATION</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Moving text -->
+  <section class="ticker">
+    <div class="ticker-track">
+      <span>CREATIVITY ✳ INDIVIDUALITY ✳ CONFIDENCE ✳ DIVERSITY ✳ </span>
+      <span>CREATIVITY ✳ INDIVIDUALITY ✳ CONFIDENCE ✳ DIVERSITY ✳ </span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Fashion portrait">
+      <div class="experience-box">
+        <h2>10+</h2>
+        <p>Years of creative vision</p>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <p class="eyebrow">WHO WE ARE</p>
+      <h2>More than faces.<br><em>We create identities.</em></h2>
+      <p>
+        FORMA is an independent model management agency built around
+        individuality, creativity and authentic representation.
+      </p>
+      <p>
+        We work with talented individuals, photographers, designers
+        and global brands to create meaningful opportunities.
+      </p>
+      <a href="#services" class="primary-btn">Discover More ↗</a>
+    </div>
+  </section>
+
+  <!-- Models -->
+  <section class="models-section section" id="models">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">OUR TALENT</p>
+        <h2>Meet the <em>Models.</em></h2>
+      </div>
+      <p class="heading-note">A collection of unique personalities<br>and extraordinary talent.</p>
+    </div>
+
+    <div class="model-tools">
+      <input type="search" id="modelSearch" placeholder="Search model by name...">
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Models</button>
+        <button class="filter-btn" data-filter="female">Women</button>
+        <button class="filter-btn" data-filter="male">Men</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+      </div>
+    </div>
+
+    <div class="models-grid" id="modelsGrid">
+
+      <article class="model-card" data-category="female" data-name="Alex Morgan">
+        <div class="model-image">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Alex Morgan">
+          <button class="favorite-btn" aria-label="Add Alex Morgan to favourites">♡</button>
+          <span class="model-number">01</span>
+        </div>
+        <div class="model-info">
+          <div>
+            <h3>Alex Morgan</h3>
+            <p>Fashion / Editorial</p>
+          </div>
+          <button class="view-profile"
+            data-name="Alex Morgan"
+            data-age="23"
+            data-height="5'9&quot;"
+            data-location="New York, USA"
+            data-category="Fashion / Editorial"
+            data-experience="4 Years"
+            data-measurements="32 - 24 - 34"
+            data-image="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85"
+            data-bio="Alex is a fashion and editorial model who enjoys creative campaigns, runway shows and high-fashion photography.">
+            View Profile ↗
+          </button>
+        </div>
+      </article>
+
+      <article class="model-card" data-category="male" data-name="Jordan Lee">
+        <div class="model-image">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85" alt="Jordan Lee">
+          <button class="favorite-btn" aria-label="Add Jordan Lee to favourites">♡</button>
+          <span class="model-number">02</span>
+        </div>
+        <div class="model-info">
+          <div>
+            <h3>Jordan Lee</h3>
+            <p>Commercial / Lifestyle</p>
+          </div>
+          <button class="view-profile"
+            data-name="Jordan Lee"
+            data-age="25"
+            data-height="6'1&quot;"
+            data-location="London, UK"
+            data-category="Commercial / Lifestyle"
+            data-experience="5 Years"
+            data-measurements="38 - 31 - 38"
+            data-image="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=85"
+            data-bio="Jordan works across commercial, lifestyle and fashion campaigns. He enjoys working with creative teams and international brands.">
+            View Profile ↗
+          </button>
+        </div>
+      </article>
+
+      <article class="model-card" data-category="female" data-name="Samira Khan">
+        <div class="model-image">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=85" alt="Samira Khan">
+          <button class="favorite-btn" aria-label="Add Samira Khan to favourites">♡</button>
+          <span class="model-number">03</span>
+        </div>
+        <div class="model-info">
+          <div>
+            <h3>Samira Khan</h3>
+            <p>Runway / Beauty</p>
+          </div>
+          <button class="view-profile"
+            data-name="Samira Khan"
+            data-age="22"
+            data-height="5'8&quot;"
+            data-location="Mumbai, India"
+            data-category="Runway / Beauty"
+            data-experience="3 Years"
+            data-measurements="33 - 25 - 35"
+            data-image="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=85"
+            data-bio="Samira is a runway and beauty model with a passion for fashion shows, beauty editorials and brand collaborations.">
+            View Profile ↗
+          </button>
+        </div>
+      </article>
+
+      <article class="model-card" data-category="commercial" data-name="Noah Williams">
+        <div class="model-image">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=85" alt="Noah Williams">
+          <button class="favorite-btn" aria-label="Add Noah Williams to favourites">♡</button>
+          <span class="model-number">04</span>
+        </div>
+        <div class="model-info">
+          <div>
+            <h3>Noah Williams</h3>
+            <p>Commercial / Print</p>
+          </div>
+          <button class="view-profile"
+            data-name="Noah Williams"
+            data-age="24"
+            data-height="6'0&quot;"
+            data-location="Paris, France"
+            data-category="Commercial / Print"
+            data-experience="2 Years"
+            data-measurements="39 - 32 - 39"
+            data-image="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=85"
+            data-bio="Noah is a commercial and print model who loves lifestyle campaigns, brand shoots and creative photography.">
+            View Profile ↗
+          </button>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="favorite-note" id="favoriteCount">0 favourite models selected</p>
+  </section>
+
+  <!-- Model Profile Modal -->
+  <div class="modal" id="profileModal">
+    <div class="modal-content">
+      <button class="close-modal" id="closeModal" aria-label="Close profile">×</button>
+      <div class="profile-layout">
+        <div class="profile-photo">
+          <img id="profileImage" src="" alt="Model profile">
+        </div>
+        <div class="profile-details">
+          <p class="eyebrow">MODEL PROFILE</p>
+          <h2 id="profileName">Model Name</h2>
+          <p id="profileCategory" class="profile-category"></p>
+          <p id="profileBio" class="profile-bio"></p>
+
+          <div class="details-grid">
+            <div><span>Age</span><strong id="profileAge"></strong></div>
+            <div><span>Height</span><strong id="profileHeight"></strong></div>
+            <div><span>Location</span><strong id="profileLocation"></strong></div>
+            <div><span>Experience</span><strong id="profileExperience"></strong></div>
+            <div><span>Measurements</span><strong id="profileMeasurements"></strong></div>
+          </div>
+
+          <a href="#contact" class="primary-btn" id="bookModel">Book This Model ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="stat-item"><h2>150+</h2><p>Professional Models</p></div>
+    <div class="stat-item"><h2>80+</h2><p>Brand Collaborations</p></div>
+    <div class="stat-item"><h2>25+</h2><p>Countries Reached</p></div>
+    <div class="stat-item"><h2>10+</h2><p>Years of Experience</p></div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Our <em>Expertise.</em></h2>
+      </div>
+      <p class="heading-note">Creative solutions for brands<br>and talented individuals.</p>
+    </div>
+
+    <div class="service-list">
+      <div class="service-item">
+        <span>01</span>
+        <h3>Model Management</h3>
+        <p>Professional guidance and career development for models.</p>
+        <span class="service-arrow">↗</span>
+      </div>
+      <div class="service-item">
+        <span>02</span>
+        <h3>Fashion Campaigns</h3>
+        <p>Connecting brands with the right creative talent.</p>
+        <span class="service-arrow">↗</span>
+      </div>
+      <div class="service-item">
+        <span>03</span>
+        <h3>Portfolio Development</h3>
+        <p>Professional photoshoots and portfolio building.</p>
+        <span class="service-arrow">↗</span>
+      </div>
+      <div class="service-item">
+        <span>04</span>
+        <h3>Casting & Auditions</h3>
+        <p>Discovering fresh faces for upcoming projects.</p>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial -->
+  <section class="editorial">
+    <div class="editorial-image">
+      <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=85" alt="Fashion editorial">
+    </div>
+    <div class="editorial-content">
+      <p class="eyebrow">THE FORMA EXPERIENCE</p>
+      <h2>Every face has<br>a <em>story to tell.</em></h2>
+      <p>We believe great fashion starts with people who are confident enough to be themselves.</p>
+      <a href="#contact" class="light-btn">Work With Us ↗</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="reviews section" id="reviews">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">KIND WORDS</p>
+        <h2>What people <em>say.</em></h2>
+      </div>
+    </div>
+
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"The team made my first professional campaign experience comfortable and memorable."</p>
+        <h4>— Model Feedback</h4>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"A creative team that understands the vision of a brand and brings it to life."</p>
+        <h4>— Brand Partner</h4>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Professional communication, beautiful creative direction and a great experience."</p>
+        <h4>— Creative Collaborator</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">GOT QUESTIONS?</p>
+        <h2>Frequently <em>Asked.</em></h2>
+      </div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question">How can I become a FORMA model? <span>+</span></button>
+        <div class="faq-answer">You can send your details and portfolio through our contact form. Our team can review your application.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do I need professional photos? <span>+</span></button>
+        <div class="faq-answer">Professional photos are helpful, but simple natural-light photographs can also be used for an initial application.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can brands book models? <span>+</span></button>
+        <div class="faq-answer">Yes. Brands can contact our team with project details, dates and the type of talent they need.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="contact-info">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Let's create<br><em>something iconic.</em></h2>
+      <p>Whether you're a model, brand or creative professional, we'd love to hear from you.</p>
+      <div class="contact-detail">
+        <span>Email</span>
+        <strong>simrankhanam0426@gmail.com</strong>
+      </div>
+      <div class="contact-detail">
+        <span>Location</span>
+        <strong>Worldwide / Available Globally</strong>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <h3>Send an Inquiry</h3>
+
+      <label for="fullName">Your Name</label>
+      <input type="text" id="fullName" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="inquiryType">I am a</label>
+      <select id="inquiryType" required>
+        <option value="">Select an option</option>
+        <option>Model</option>
+        <option>Brand / Client</option>
+        <option>Photographer</option>
+        <option>Other</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+
+      <button type="submit" class="primary-btn">Send Inquiry ↗</button>
+      <p class="form-note">Demo form: opens your email application to send the inquiry.</p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top">
+      <a href="#" class="logo footer-logo">FORMA<span>.</span></a>
+      <p>Different faces. One vision.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> FORMA Models. All rights reserved.</p>
+      <p>Instagram &nbsp; Pinterest &nbsp; LinkedIn</p>
+    </div>
+  </footer>
+
+  <script >
+    
+// Mobile Navbar
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  menuBtn.textContent = navLinks.classList.contains("active") ? "×" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuBtn.textContent = "☰";
+  });
+});
+
+
+// Model Search and Filter
+const searchInput = document.getElementById("modelSearch");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const modelCards = document.querySelectorAll(".model-card");
+
+let currentFilter = "all";
+
+function filterModels() {
+  const searchText = searchInput.value.toLowerCase();
+
+  modelCards.forEach(card => {
+    const name = card.dataset.name.toLowerCase();
+    const category = card.dataset.category;
+
+    const matchesSearch = name.includes(searchText);
+    const matchesFilter =
+      currentFilter === "all" ||
+      category === currentFilter ||
+      (currentFilter === "commercial" &&
+       card.textContent.toLowerCase().includes("commercial"));
+
+    card.style.display = matchesSearch && matchesFilter ? "" : "none";
+  });
+}
+
+searchInput.addEventListener("input", filterModels);
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    currentFilter = button.dataset.filter;
+    filterModels();
+  });
+});
+
+
+// Model Profile Modal
+const profileModal = document.getElementById("profileModal");
+const closeModal = document.getElementById("closeModal");
+
+document.querySelectorAll(".view-profile").forEach(button => {
+  button.addEventListener("click", () => {
+    document.getElementById("profileName").textContent = button.dataset.name;
+    document.getElementById("profileAge").textContent = button.dataset.age;
+    document.getElementById("profileHeight").textContent = button.dataset.height;
+    document.getElementById("profileLocation").textContent = button.dataset.location;
+    document.getElementById("profileCategory").textContent = button.dataset.category;
+    document.getElementById("profileExperience").textContent = button.dataset.experience;
+    document.getElementById("profileMeasurements").textContent = button.dataset.measurements;
+    document.getElementById("profileBio").textContent = button.dataset.bio;
+    document.getElementById("profileImage").src = button.dataset.image;
+
+    profileModal.classList.add("show");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+function hideModal() {
+  profileModal.classList.remove("show");
+  document.body.style.overflow = "";
+}
+
+closeModal.addEventListener("click", hideModal);
+
+profileModal.addEventListener("click", event => {
+  if (event.target === profileModal) {
+    hideModal();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    hideModal();
+  }
+});
+
+
+// Book Model - automatically fill inquiry
+document.getElementById("bookModel").addEventListener("click", () => {
+  const modelName = document.getElementById("profileName").textContent;
+  document.getElementById("message").value =
+    "I am interested in booking " + modelName + " for my project.";
+
+  hideModal();
+});
+
+
+// Favourite Models
+const favoriteButtons = document.querySelectorAll(".favorite-btn");
+const favoriteCount = document.getElementById("favoriteCount");
+
+function updateFavoriteCount() {
+  const total = document.querySelectorAll(".favorite-btn.active").length;
+  favoriteCount.textContent = total + " favourite model" +
+    (total === 1 ? "" : "s") + " selected";
+}
+
+favoriteButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    button.textContent = button.classList.contains("active") ? "♥" : "♡";
+    updateFavoriteCount();
+  });
+});
+
+
+// FAQ Accordion
+document.querySelectorAll(".faq-question").forEach(question => {
+  question.addEventListener("click", () => {
+    const currentItem = question.parentElement;
+
+    document.querySelectorAll(".faq-item").forEach(item => {
+      if (item !== currentItem) {
+        item.classList.remove("open");
+      }
+    });
+
+    currentItem.classList.toggle("open");
+  });
+});
+
+
+// Contact Form
+document.getElementById("contactForm").addEventListener("submit", event => {
+  event.preventDefault();
+
+  const name = document.getElementById("fullName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const type = document.getElementById("inquiryType").value;
+  const message = document.getElementById("message").value.trim();
+
+  const subject = encodeURIComponent("FORMA Website Inquiry - " + type);
+
+  const body = encodeURIComponent(
+    "Name: " + name +
+    "\nEmail: " + email +
+    "\nI am a: " + type +
+    "\nMessage: " + message
+  );
+
+  window.location.href =
+    "mailto:simrankhanam0426@gamil.com?subject=" + subject + "&body=" + body;
+});
+
+
+// Dynamic Year
+document.getElementById("year").textContent = new Date().getFullYear();
+
+  </script>
+</body>
+</html>
